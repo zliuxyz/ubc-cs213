@@ -1,0 +1,46 @@
+Data:
+# of blocks = 10
+aRead - elapsed time: 0m0.015s; sys time: 0m0.002s
+tRead - elapsed time: 0m0.016s; sys time: 0m0.009s
+
+# of blocks = 100
+aRead - elapsed time: 0m0.016s; sys time: 0m0.002s
+tRead - elapsed time: 0m0.022s; sys time: 0m0.014s
+
+# of blocks = 1000
+aRead - elapsed time: 0m0.018s; sys time: 0m0.003s
+tRead - elapsed time: 0m0.080s; sys time: 0m0.067s
+
+# of blocks = 10000
+aRead - elapsed time: 0m0.034s; sys time: 0m0.013s 
+tRead - elapsed time: 0m0.675s; sys time: 0m0.609s
+
+Observations:
+tRead is slower than aRead in general in terms of running time. More specifi-cally, the elapsed time and sys time for tRead is much closer than those of aRead. 
+
+Explanation:
+tRead uses multi-threads to hide asynchrony, thus, it's run time is much fas-ter than sRead. However, it requires the operating system to handle multipl-e threads, which leads to it being slower than aRead, with a higher sys tim-e.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

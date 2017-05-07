@@ -1,0 +1,6 @@
+The correct values (in hex) I should in my program is:
+
+RA = 0x65F60700
+D  = 0x8151DEFF
+
+The reason why it does not work before is because the computer on Hubble uses Big Endian, however, the i7 CPU on my computer uses Little Endian. 

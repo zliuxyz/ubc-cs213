@@ -1,0 +1,4 @@
+- memory read for address of s
+- memory read for address of s.z
+- memory read for s.z->x[i]
+- memory read for address of v

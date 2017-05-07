@@ -1,0 +1,5 @@
+There are minimum 4  memory reads and writes required.
+1: read for value of s->d1[1]
+2: write for value of s->d2[0]
+3: read for value of s->d2[1]
+4: write for value of s->d1[0]

@@ -1,0 +1,26 @@
+Data: 
+# of blocks = 10
+total elapsed clock time = 0m0.114s
+
+# of blocks = 100
+total elapsed clock time = 0m1.093s
+
+# of blocks = 1000
+total elapsed clock time = 0m10.895s
+
+# of blocks = 10000
+total elapsed clock time = 1m48.166s
+
+Observations:
+As the # of blocks increases, the total elapsed clock time increases at approximately same rate, e.g., # of blocks * 10 -> total elapsed clock time * 10.
+
+Explanation:
+The increasing elapsed clock time is due to the implementaiton of sRead.c, it is synchronized read, which maxes out the read time, processor has to wait every single read to com
+-plete to go to next one.
+
+
+
+
+
+
+

@@ -1,0 +1,2 @@
+The problem is in function "list_delete". The "list_delete" function was going to free() the list before we print the tree, so we actually could not access the tree after the 
+free() in the "list_delete". Therefore, those nodes contains dangling pointers as a result.

@@ -1,0 +1,9 @@
+Test:
+My test is based on that the total number of iterations of consumers and producers should
+be equal to the number of times that items changed.
+
+Histogram:
+The histogram shows in average, for each number of items, there will be roughly the same amount of values of items.
+
+
+

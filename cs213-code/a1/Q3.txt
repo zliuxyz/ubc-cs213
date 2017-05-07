@@ -1,0 +1,3 @@
+Example: 0x3D29293D.
+
+All 4-byte integers with property their first and last bytes are the same, and their second and third bytes are the same.

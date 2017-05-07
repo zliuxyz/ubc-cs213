@@ -1,0 +1,26 @@
+test1.
+input: 0xffffffff.
+ouput: bigEndian -1, littleEndian -1.
+- 8th bit of every byte set to 1.
+
+test2. 
+input: 0x22000000.
+output: bigEndian 570425344, littleEndian 34.
+intpu: 0x00000022.
+output: bigEndian 34, littleEndian 570425344.
+- opposite inputs give opposite answers.
+
+test3.
+input: 0x32452166.
+output: bigEndian 843391334, littleEndian 1713456434.
+- test case where all bytes are non-zero.
+
+test4.
+input: 0x80000000.
+output: bigEndian -2147483648, littleEndian 128.
+- test case where first byte's 8th bit is set to 1.
+
+test5.
+input: 0x000020b0.
+output: bigEndian 8368, littleEndian -1340080128.
+- test case where last byte's 8th bit is set to 1.

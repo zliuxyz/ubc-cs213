@@ -1,0 +1,60 @@
+Data:
+# of blocks = 10
+sRead = 0m0.112s
+aRead = 0m0.016s
+
+# of blocks = 100
+sRead = 0m1.092s
+aRead = 0m0.017s
+
+# of blocks = 1000
+sRead = 0m10.854s
+aRead = 0m0.018s
+
+Observations:
+sRead - the total elapsed time would increase about proportional to the increase of # of blocks, specifically, it will take much more time to get the result as # of blocks goes up.
+aRead - the total elapsed time does not increase as fast as the increase of # of blocks. In fact, time hardly increases, it stays about the same as before.
+
+Explanations:
+sRead uses synchronous read, which would let CPU to wait for each read completed, forcing CPU to run at I/O controller's speed, which is slow.
+aRead uses asynchronous read, which frees CPU from waiting for a single read to be completed, thus, CPU can continue to schedule read for each block, and when a block's data is ready, it will automatically interupt the CPU. Thus, this method is way faster than sRead
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

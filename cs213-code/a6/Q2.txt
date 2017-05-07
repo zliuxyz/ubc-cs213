@@ -1,0 +1,8 @@
+2a. In the stack version, the return address is actually stored in the stack
+    frame of 'ping', to do that, it allocates space to store the return addr
+    ess and deallocates space to restore the return address. However, in reg
+    version, it does not save the return address, it only stores the return 
+    address in r6 
+2b. If we have many arguments and variables, then it is efficient to use sta
+    -ck approach.
+2c. This approach does not require much memory.
